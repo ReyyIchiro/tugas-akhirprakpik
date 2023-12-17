@@ -1,0 +1,728 @@
+:root {
+  --primary-color: #ff4500;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  
+}
+
+
+/* Navbar Section */
+.container {
+  width: 80%;
+  margin-inline: auto;
+}
+
+/* Nav Section Start*/
+nav {
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(15, 14, 23, 0.8);
+  backdrop-filter: blur(5px);
+  z-index: 9999;
+}
+
+nav .box-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .box-navbar .logo h1 {
+  color: white;
+  font-size: 26px;
+  font-weight: 200;
+  font-family: "Pacifico", sans-serif;
+}
+
+nav .box-navbar .logo h1 span {
+  color: var(--primary-color);
+}
+
+nav .box-navbar .menu {
+  display: flex;
+  column-gap: 50px;
+}
+
+nav .box-navbar .menu li {
+  list-style: none;
+}
+
+nav .box-navbar .menu li a {
+  color: white;
+  font-size: 20px;
+  transition: 0.2s ease-in-out;
+  font-weight: 500;
+}
+
+nav .box-navbar .menu li a:hover {
+  color: var(--primary-color);
+}
+
+nav .menu a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary-color);
+  transform: scaleX(0);
+  transition: 0.2s ease-in-out;
+}
+
+nav .menu a:hover::after {
+  transform: scaleX(0.8);
+}
+/* Nav Section End */
+
+/* Hero Section Start */
+.hero {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.back-video {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 70px;
+  color: rgb(244, 244, 244);
+  margin-bottom: 18px;
+  transition: 0.5s ease-in-out;
+  font-weight: 500;
+}
+
+.content h1:hover {
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+}
+
+.content a {
+  color: white;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 24px;
+  border: 2px solid white ;
+  transition: 0.5s ease-in-out;
+  font-family: "Chubbo-Regular";
+}
+
+.content a:hover {
+  background-color: var(--primary-color);
+  border: 1px solid white;
+  color: white;
+}
+/* Hero Section End */
+
+/* Main Section */
+#team,
+#materi {
+  padding-top: 10px;
+}
+/* Team Section Start */
+.team .card-team {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.card {
+  background-color: #e3e3e3;
+  width: 30%;
+  padding: 20px 0px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 18px -2px rgba(0, 0, 0, 0.63);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.1) translateY(-18px);
+}
+
+.card .card-img {   
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 5px solid var(--primary-color);
+}
+
+.card-img .reza {
+  width: 130%;
+  position: relative;
+  left: -20px;
+}
+
+.card-img .raihan {
+  width: 100%;
+}
+
+.card-img .fikri {
+  position: relative;
+  width: 200px;
+  top: -70px;
+  left: -25px;
+}
+
+.card .card-content p {
+  margin: 20px;
+  font-weight: 500;
+}
+
+
+.card .card-content button {
+  width: 120px;
+  height: 40px;
+  border: 1px solid black;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.card .card-content button:hover {
+  background-color: white;
+  color: var(--primary-color);
+}
+/* Team Section End */
+
+/* Materi Start */
+.materi,
+.team {
+  /* margin-top: 100px; */
+  padding: 18px 0;
+}
+
+.materi .title {
+  text-align: center;
+  margin: 100px 0 30px 0;
+  font-size: 24px;
+  font-family: 'Switzer', sans-serif;
+}
+
+.team .title {
+  font-size: 30px;
+  text-align: center;
+  margin: 100px 0 30px 0;
+  font-family: 'Switzer', sans-serif;
+  padding-bottom: 10px;
+}
+.materi .box-materi {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 50px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.materi .box-materi .box {
+  width: 38%;
+  box-shadow: 1px 1px 18px -2px rgba(0, 0, 0, 0.63);
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.materi .box:hover {
+  transform: scale(0.9);
+}
+
+.materi .box-materi {
+  text-align: center;
+}
+
+.materi .box-materi .box .materi-img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding-top: 20px;
+}
+
+.materi .box-materi .box img {
+  width: 50%;
+}
+
+.materi .box-materi .box .materi-content {
+  padding: 25px 10px 15px 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 100%;
+}
+
+.materi .box-materi .box .materi-content h3 {
+  margin-bottom: 15px;
+  margin-top: -5px;
+}
+
+.materi .box-materi .box .materi-content p {
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.materi .box-materi .box .materi-content button {
+  cursor: pointer;
+  width: 120px;
+  height: 40px;
+  border: 1px solid black;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.materi .box-materi .box button:hover {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+.excel {
+  background-color: #1f6e44;
+}
+
+.word {
+  background-color: #0e4cb6;
+}
+
+.database {
+  background-color: #62121b;
+}
+
+.powerpoint {
+  background-color: #621703;
+}
+/* Materi End */
+
+/* Footer Start */
+footer {
+  background-color: #031540;
+  margin-top: 100px;
+  text-align: center;
+  padding: 50px 0 0 0;
+}
+
+footer .closing {
+  margin-bottom: 30px;
+  font-size: 13px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+footer .closing h2 {
+  font-weight: 600;
+}
+
+footer .link ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+footer .link ul li a {
+  color: white;
+  margin: 0 20px;
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.2s ease-in-out;
+}
+
+footer .link ul li a:hover {
+  color: var(--primary-color);
+}
+
+footer .copyright {
+  font-size: 14px;
+  background-color: white;
+  margin-top: 30px;
+  padding: 10px 0;
+  font-weight: 500;
+  color: black;
+}
+/* Footer End */
+
+/* Profile Start */
+.home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 70px;
+  background: linear-gradient(-90deg, #fff 30%, #031540 30%);
+}
+
+.home .home-content {
+  max-width: 700px;
+  color: white;
+}
+
+.home-content h1 {
+  font-size: 55px;
+  margin: 0 0 0 30px;
+  font-weight: 600;
+}
+
+.home-content h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.home-content h3 span {
+  letter-spacing: 1px;
+}
+
+.home-content p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  text-align: justify;
+  line-height: 25px;
+}
+
+
+.home .sosmed {
+  margin-left: 30px;
+}
+
+.home .sosmed a {
+  color: white;
+  margin: 0 15px;
+  transition:0.4s ease-in-out;
+}
+
+.home .sosmed a:hover {
+  color: var(--primary-color);
+}
+
+/* Profile Raihan */
+.profile-raihan {
+  width: 100%;
+  /* background-color: #6d28d9; */
+}
+
+.profile-raihan .photo {
+  width: 75%;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #031540;
+  border: 25px solid white;
+  text-align: center;
+  margin-left: 40px;
+}
+
+.profile-raihan .photo .img-raihan {
+  width: 75%;
+  position: relative;
+  bottom: -20px;
+}
+
+/* Profile Reza */
+.profile-reza .photo {
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #031540;
+  border: 25px solid white;
+  margin-left: 40px;
+}
+
+.profile-reza .photo .img-reza {
+  position: relative;
+  bottom: -20px;
+}
+
+/* Profile Fikri */
+.profile-fikri .photo {
+  width: 155%;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #031540;
+  border: 25px solid white;
+  margin-left: 40px;
+  text-align: center;
+}
+
+.profile-fikri .photo .img-fikri {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  bottom: -20px;
+}
+
+/* Materi Excel Start */
+.container-excel {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 50px;
+  padding: 85px 10px;
+  box-shadow: 1px 1px 18px -2px rgba(0, 0, 0, 0.63);
+}
+
+.container-excel .excel-img {
+  width: 100%;
+  text-align: center;
+  padding: 0 50px;
+  background-color: #1f6e44;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.container-excel .excel-img img {
+  width: 25%;
+}
+
+.materi-excel {
+  text-align: justify;
+}
+
+.materi-excel h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.materi-excel p:nth-child(2) {
+  text-indent: 50px;
+}
+
+.materi-excel p:nth-child(5) {
+  text-indent: 20px;
+}
+
+.materi-excel p:nth-child(33) {
+  text-indent: 25px;
+}
+
+.materi-excel ul:nth-child(53) {
+  padding-left: 45px;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+  width: 25%;
+  text-align: center;
+}
+
+ol {
+  padding-left: 40px;
+}
+
+.materi-excel p,
+.materi-excel li,
+.materi-excel ol {
+  font-weight: 500;
+}
+/* Materi Excel End */
+
+/* Materi PowerPoint Start */
+.container-powerpoint {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 50px;
+  padding: 85px 10px;
+  box-shadow: 1px 1px 18px -2px rgba(0, 0, 0, 0.63);
+}
+
+.container-powerpoint .powerpoint-img {
+  width: 100%;
+  text-align: center;
+  padding: 0 50px;
+  background-color: #621703;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.container-powerpoint .powerpoint-img img {
+  width: 25%;
+}
+
+.materi-powerpoint {
+  text-align: justify;
+}
+
+.materi-powerpoint h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.materi-powerpoint p:nth-child(3) {
+  text-indent: 15px;
+}
+
+.materi-powerpoint p,
+.materi-powerpoint li,
+.materi-powerpoint ol {
+  font-weight: 500;
+}
+/* Materi PowerPoint End */
+
+/* Materi Database Start */
+.container-database {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 50px;
+  padding: 85px 10px;
+  box-shadow: 1px 1px 18px -2px rgba(0, 0, 0, 0.63);
+}
+
+.container-database .database-img {
+  width: 100%;
+  text-align: center;
+  padding: 0 50px;
+  background-color: #62121b;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.container-database .database-img img {
+  width: 25%;
+}
+
+.materi-database {
+  text-align: justify;
+}
+
+.materi-database h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.materi-database h3 {
+  margin-bottom: 5px;
+}
+
+.materi-database p:nth-child(2) {
+  text-indent: 15px;
+  margin-bottom: 10px;
+}
+
+.materi-database p:nth-child(4) {
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.materi-database p:nth-child(8),
+.materi-database p:nth-child(9),
+.materi-database p:nth-child(13),
+.materi-database p:nth-child(14) {
+  padding-left: 20px;
+}
+
+.materi-database ul:nth-child(10) {
+  padding-left: 50px;
+}
+
+.materi-database ol:nth-child(11) {
+  padding-left: 65px;
+}
+
+.img-materi-msaccess {
+  width: 40%;
+  margin: 12px 0 10px 10px;
+}
+
+.materi-database p,
+.materi-database li,
+.materi-database ul {
+  font-weight: 500;
+}
+/* Materi Database End */
+
+/* Materi Word Start */
+.container-word {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 50px;
+  padding: 85px 10px;
+  box-shadow: 1px 1px 18px -2px rgba(0, 0, 0, 0.63);
+}
+
+.container-word .word-img {
+  width: 100%;
+  text-align: center;
+  padding: 0 50px;
+  background-color: #0e4cb6;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.container-word .word-img img {
+  width: 25%;
+}
+
+.materi-word {
+  text-align: justify;
+}
+
+.materi-word h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.materi-word ul {
+  padding-left: 50px;
+}
+
+.materi-word ul:nth-child(5) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 20px;
+  column-gap: 40px;
+  width: 55%;
+  margin-top: 10px;
+}
+
+.materi-word ul:nth-child(5) li {
+  flex: 30%;
+}
+
+.materi-word p:nth-child(8),
+.materi-word p:nth-child(9),
+.materi-word p:nth-child(15),
+.materi-word p:nth-child(30) {
+  padding-left: 27px;
+}
+
+.materi-word p,
+.materi-word li,
+.materi-word ul {
+  line-height: 1.6;
+  font-weight: 500;
+}
+.materi-word .img-materi-word {
+  width: 40%;
+  margin: 12px 0 10px 10px;
+}
+/* Materi Word End */

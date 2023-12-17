@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Sambungin CSS ke HTML -->
+    <link rel="stylesheet" href="../style.css" />
+    <title>Materi Excel</title>
+  </head>
+  <body>
+    <!-- Navbar Section Start -->
+    <header>
+      <nav>
+        <div class="container">
+          <div class="box-navbar">
+            <div class="logo">
+              <a href="../index.html"
+                ><h1>Kelompok <span>Lima</span></h1></a
+              >
+            </div>
+            <ul class="menu">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../index.html">Team</a></li>
+              <li><a href="../index.html">Materi</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Navbar Section End -->
+
+    <!-- Main Section Start-->
+    <main>
+      <div class="container-excel">
+        <div class="excel-img">
+          <img
+            src="../asset/materi-logo/microsoft-excel.png"
+            alt="Logo Excel"
+          />
+        </div>
+        <div class="materi-excel">
+          <h1>Microsoft Excel</h1>
+          <p>
+            Microsoft Excel, merupakan perangkat lunak pengolah angka. Biasanya
+            digunakan untuk bekerja dengan daftar data, menghitung angka-angka,
+            membuat laporan, diagram, grafik, dsb.
+          </p>
+          <br />
+          <h2>1. Aritmatika</h2>
+          <p>
+            Aritmatika, adalah bagian dari matematika yang mempelajari tentang
+            operasi dasar bilangan (penjumlahan, pengurangan, perkalian, dan
+            pembagian).
+          </p>
+          <br />
+          <p>1.1 Lambang Perhitungan</p>
+          <br />
+          <table>
+            <tr>
+              <th>Simbol</th>
+              <th>Keterangan</th>
+            </tr>
+            <tr>
+              <td>+</td>
+              <td>Penambahan</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>Pengurangan</td>
+            </tr>
+            <tr>
+              <td>*</td>
+              <td>Perkalian</td>
+            </tr>
+            <tr>
+              <td>/</td>
+              <td>Pembagian</td>
+            </tr>
+            <tr>
+              <td>^</td>
+              <td>Pembagian</td>
+            </tr>
+          </table>
+          <br />
+          <p>1.2 SUM</p>
+          <p>
+            Sum, digunakan untuk menjumlahkan nilai pada sel. Menggunakan rumus
+            : =SUM(Sel Asal : Sel Tujuan).
+          </p>
+          <br />
+          <p>1.3 Average</p>
+          <p>
+            Average, digunakan untuk mencari nilai rata-rata sel. Menggunakan
+            rumus : =AVERAGE(Sel Asal : Sel Tujuan).
+          </p>
+          <br />
+          <p>1.4 Min</p>
+          <p>
+            Min, digunakan untuk mencari nilai terendah dari sel. Menggunakan
+            rumus : =MIN(Sel Asal : Sel Tujuan)
+          </p>
+          <br />
+          <p>1.5 Max</p>
+          <p>
+            Max, digunakan untuk mencari nilai tertinggi dari sel. Menggunakan
+            rumus : =MAX(Sel Asal : Sel Tujuan).
+          </p>
+          <br />
+          <p>1.6 Rank</p>
+          <p>
+            Rank, digunakan untuk mencari peringkat melalui perbandingan nilai
+            masing-masing sel. Menggunakan rumus : =RANK(Sel Asal : Sel Tujuan)
+            Catatan : Klik Fn+F4 atau F4 untuk mengunci nilai.
+          </p>
+          <br />
+          <p>1.7 Count</p>
+          <p>
+            Count, digunakan untuk menghitung jumlah banyaknya sel yang terisi
+            data. Menggunakan rumus : =COUNT(Sel Asal : Sel Tujuan).
+          </p>
+          <br />
+          <p>1.8 CountBlank</p>
+          <p>
+            CountBlank, digunakan untuk menghitung jumlah banyaknya sel yang
+            tidak terisi data. Menggunakan rumus : =COUNTBLANK(Sel Asal : Sel
+            Tujuan)
+          </p>
+          <br />
+          <h2>2. IF</h2>
+          <p>
+            Fungsi IF, akan menghasilkan sebuah nilai tertentu jika kondisi yang
+            ditentukan terpenuhi dan akan menghasilkan nilai lainnya jika
+            kondisi tidak terpenuhi.
+          </p>
+          <br />
+          <p>2.1 IF</p>
+          <p>
+            Menggunakan rumus :
+            =IF(TesLogika;KondisiTerpenuhi;KondisiTidakTerpenuhi).
+          </p>
+          <br />
+          <p>2.2 IF Bertingkat</p>
+          <p>
+            Menggunakan rumus :
+            =IF(TesLogika1;KondisiTerpenuhi1;IF(TesLogika2;KondisiTerpenuhi2;Kondisi
+            TidakTerpenuhi)).
+          </p>
+          <br />
+          <p>2.3 IF AND</p>
+          <p>
+            Kedua uji harus benar, baru kondisi terpenuhi. Menggunakan rumus :
+            =IF(AND(Uji_Logika1;Uji_Logika2;...);KondisiTerpenuhi;KondisiTidakTerpenuhi)).
+          </p>
+          <br />
+          <p>2.4 IF OR</p>
+          <p>
+            Jika salah satu uji saja benar, maka kondisi akan terpenuhi.
+            Menggunakan rumus :
+            =IF(OR(Uji_Logika1;Uji_Logika2;...);KondisiTerpenuhi; <br />
+            KondisiTidakTerpenuhi)) .
+          </p>
+          <br />
+          <h2>3. LEFT, MID, RIGHT</h2>
+          <ol>
+            <li>
+              LEFT, Digunakan untuk menampilkan isi sel dihitung mulai dari
+              karakter pertama dari kiri. Menggunakan rumus : =LEFT(Sel Asal;
+              Banyak karakter yg akan ditampilkan).
+            </li>
+            <li>
+              MID, Digunakan untuk menampilkan isi sel dihitung mulai dari
+              indeks karakter pilihan, lalu berapa karakter yang akan
+              ditampilkan mulai dari indeks karakter pilihan tersebut.
+              Menggunakan rumus : =MID(Sel Asal; Dimulai dari; Banyak char yg
+              ditampilkan) .
+            </li>
+            <li>
+              RIGHT, Digunakan untuk menampilkan isi sel dihitung mulai dari
+              karakter pertama dari kanan. Menggunakan rumus : =RIGHT(Sel Asal;
+              Banyak karakter yg akan ditampilkan).
+            </li>
+            <br />
+          </ol>
+          <h2>4. VLOOKUP dan HLOOKUP</h2>
+          <ol>
+            <li>
+              VLOOKUP, Digunakan untuk mengisi data berdasarkan tabel referensi
+              yang berbentuk kolom atau vertikal. Menggunakan rumus :
+              =VLOOKUP(Nilai Kunci; Tabel Referensi; Kolom yg digunakan; 0)
+            </li>
+            <li>
+              HLOOKUP, Digunakan untuk mengisi data berdasarkan tabel referensi
+              yang berbentuk baris atau horizontal. Menggunakan rumus :
+              =HLOOKUP(Nilai Kunci; Tabel Referensi; Kolom yg digunakan; 0)
+            </li>
+          </ol>
+          <br />
+          <p>4.1 0-1 Pada Akhir Rumus</p>
+          <ul>
+            <li>
+              0 = False = Exact Match Artinya : Nilai yg dihasilkan harus sesuai
+              dengan tabel, jika data tidak ada dalam tabel maka akan tertulis
+              #N/A
+            </li>
+            <li>
+              1 = True = Approximate Match Artinya : Nilai yg dihasilkan tidak
+              harus sesuai tabel, jika data tidak ada dalam tabel maka dia akan
+              “mengira-ngira” nilainya tersebut. Biasanya digunakan untuk data
+              terurut.
+            </li>
+          </ul>
+          <br />
+          <h2>5. Pembuatan Diagram</h2>
+          <ol>
+            <li>Buatlah Tabel dan Isinya Terlebih Dahulu</li>
+            <li>Blok Tabel Yang Akan Dijadikan Diagram</li>
+            <li>Pilih Tab Insert</li>
+            <li>Lalu Cari Chart, Pilih Column Chart Sesuai Kebutuhan</li>
+            <li>Diagram Akan Muncul Secara Otomatis</li>
+          </ol>
+          <br />
+          <h2>6. Pivot Table</h2>
+          <p>
+            Pivot Table, adalah sebuah tabel interaktif yang bisa menampilkan
+            ringkasan data berjumlah besar dalam bentuk dan orientasi yang
+            berbeda, juga mampu melakukan kalkulasi pada setiap item yang
+            dibutuhkan dengan menggunakan cara perhitungan sesuai kebutuhan.
+          </p>
+          <br />
+          <p>6.1 Pembuatan Pivot Table</p>
+          <ol>
+            <li>
+              Buatlah Tabel Terlebih Dahulu Beserta Datanya, Usahakan Tidak Ada
+              Sel Kosong. Lalu Blok Tabel Tersebut
+            </li>
+            <li>Pada Tab Insert, Klik Pivottable</li>
+            <li>
+              Pada Menu Pivottable, Pilih Existing Worksheet Lalu Pada Location,
+              Klik Tombol Panah Untuk Menunjuk Lokasi Munculnya Pivottable.
+            </li>
+            <li>
+              Klik Sel Kosong Untuk Memunculkan Pivot Table, Jika Sudah Maka
+              Klik Kembali Tombol Panah. Lalu Klik OK.
+            </li>
+            <li>
+              Jika Sudah Muncul Menu Seperti Di Bawah, Maka Pivottable Siap
+              Digunakan, Ceklis Field Yang Diinginkan Untuk Menggunakan
+              Pivottable Sesuai Keinginan.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </main>
+    <!-- Main Section End-->
+  </body>
+</html>
